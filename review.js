@@ -75,3 +75,12 @@ var str2 = "Hello";
 var str3 = 'JavaScript';
 var str4 = '😅';
 
+
+/* Funkcja (function) */
+
+parseInt('123', 10);
+JSON.stringify({});
+
+/* Obiekt (object) */
+
+/* Tablica (array) */
