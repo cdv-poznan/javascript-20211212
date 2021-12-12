@@ -92,3 +92,30 @@ console.log(textWithWhitespace.trimLeft());
 
 console.log('trimRight');
 console.log(textWithWhitespace.trimRight());
+
+/* Object/JSON */
+
+console.clear();
+
+var person = {
+  name: {
+    first: 'Adrian',
+    last: 'Juszczak'
+  },
+  age: 30,
+  sayHello() {
+    console.log('Hello', this.name.first);
+  }
+}
+
+console.log(typeof person, person);
+
+const str = JSON.stringify(person);
+
+console.log('json string');
+console.log(typeof str, str);
+
+console.log('parsed object');
+var obj = JSON.parse(str);
+
+console.log(obj);
