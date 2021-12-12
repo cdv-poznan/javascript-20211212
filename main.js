@@ -143,3 +143,22 @@ function sumPure(num1, num2, num3) {
 }
 
 sumPure(outNumber1, outNumber2, 0);
+
+
+/* Typ pierwszoklasowy (first-class citizen) */
+
+function sub(a, b) {
+  return a - b;
+}
+
+var sub2 = sub;
+
+function getFunction() {
+  return sub;
+}
+
+function setFunction(fn) {
+
+}
+
+setFunction(sub); // var fn = sub
