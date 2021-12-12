@@ -154,3 +154,61 @@ var reducerArray2 = array2.reduce(function(acc, value, index) {
 }, []);
 
 console.log(reducerArray2);
+
+console.clear();
+
+var array = [2, 4, 6, 8, 6, 5];
+
+console.log(array);
+
+var index = array.indexOf(6);
+console.log(index);
+console.clear();
+
+/* indexOf
+ zwraca indeks szukanego elementu
+ bądź wartość -1 jeśli takiego elementu nie ma
+*/
+var months = ['Jan', 'Feb', 'Mar'];
+var index = months.indexOf('June');
+
+console.log(months);
+console.log(index);
+console.clear();
+
+var array = [1, 9, 3, 4, 5];
+
+var index = array.findIndex(function(value) {
+  return value % 3 === 0;
+});
+
+console.log(array);
+console.log(index);
+
+console.clear();
+
+var array = [1, 9, 3, 4, 5];
+console.log(array);
+
+var element = array.find(function(value, index) {
+  return value % 2 === 0;
+});
+
+console.log(element);
+console.clear();
+
+var array = [1, 9, 3, 4, 5];
+console.log(array);
+
+console.log(array.includes(8));
+console.log(array.includes(9));
+console.clear();
+
+var array = [1, 9, 3, 4, 5];
+console.log(array);
+
+var has = array.some(function(value, index) {
+  return value === 8;
+});
+
+console.log(has);
