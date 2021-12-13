@@ -51,3 +51,20 @@ console.log('counter1', counter1());
 console.log('counter2', counter2());
 console.log('counter1', counter1());
 console.log('counter2', counter2());
+console.clear();
+
+/* Rozwijanie funkcji (currying) */
+
+function add1(a, b, c) {
+  return a + b + c;
+}
+
+function add(a) {
+  return function(b) {
+    return a + b;
+  }
+}
+
+var add5 = add(5);
+console.log(add5(1));
+console.log(add5(10));
